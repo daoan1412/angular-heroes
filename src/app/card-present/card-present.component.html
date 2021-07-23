@@ -1,0 +1,7 @@
+
+<div [ngSwitch]="cardPresent">
+    <div *ngSwitchCase="CardPresent.Loading">Đang tải...</div>
+    <div *ngSwitchCase="CardPresent.CardPresent">Phát hiện thẻ</div>
+    <div *ngSwitchCase="CardPresent.CardAbsent">Vui lòng đặt thẻ vào khay</div>
+    <div *ngSwitchCase="CardPresent.NeedRemove">Vui lòng bỏ thẻ ra khỏi khay</div>
+</div>

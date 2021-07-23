@@ -1,0 +1,18 @@
+<img src="{{'data:image/jpg;base64,' + idCardInfo!.faceImage}}" />
+
+<div>Số căn cước công dân: {{idCardInfo?.documentNumber ?? ""}}</div>
+<div>Họ và tên: {{idCardInfo?.fullName ?? ""}}</div>
+<div>Ngày sinh: {{idCardInfo?.dateOfBirth ?? ""}}</div>
+<div>Giới tính: {{idCardInfo?.sex ?? ""}}</div>
+<div>Nơi thường trú: {{idCardInfo?.placeOfResidence ?? ""}}</div>
+<div>Ngày cấp: {{idCardInfo?.dateOfIssue ?? ""}}</div>
+<div>Ngày hết hạn: {{idCardInfo?.dateOfExpiry ?? ""}}</div>
+<div>Số CMT: {{idCardInfo?._9DigitIdNumber ?? ""}}</div>
+<div>Quốc tịch: {{idCardInfo?.nationality ?? ""}}</div>
+<div>Quê quán: {{idCardInfo?.placeOfResidence ?? ""}}</div>
+<div>Đặc điểm nhận dạng: {{idCardInfo?.personalIdentification ?? ""}}</div>
+<div>Dân tộc: {{idCardInfo?.nation ?? ""}}</div>
+<div>Tôn giáo: {{idCardInfo?.religion ?? ""}}</div>
+<div>Họ tên bố: {{idCardInfo?.fatherName ?? ""}}</div>
+<div>Họ tên mẹ: {{idCardInfo?.motherName ?? ""}}</div>
+<div>Họ tên vợ chồng: {{idCardInfo?.husbandOrWifeName ?? ""}}</div>

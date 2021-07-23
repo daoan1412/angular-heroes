@@ -1,3 +1,4 @@
 <h1>{{title}}</h1>
-<app-heros></app-heros>
-<app-messages></app-messages>
+<app-card-present [cardPresent]="cardPresent"></app-card-present>
+<app-id-card-number-input (idCardNumberEvent)="onSubmit($event)"></app-id-card-number-input>
+<app-id-card-info *ngIf="idCardInfo != null" [idCardInfo]="idCardInfo"></app-id-card-info>
